@@ -187,8 +187,14 @@ print(f"Seaborn version : Seaborn {sns.__version__}")
 print(f"Tensorflow version : Tensorflow {tf.__version__}")
 
 # Install the EfficientNet Keras Library
-!pip install ../input/kerasapplications/keras-team-keras-applications-3b180cb -f ./ --no-index
-!pip install ../input/efficientnet/efficientnet-1.1.0/ -f ./ --no-index
+import subprocess
+
+# Install Keras Applications
+subprocess.run(["pip", "install", "../input/kerasapplications/keras-team-keras-applications-3b180cb", "-f", "./", "--no-index"])
+
+# Install EfficientNet
+subprocess.run(["pip", "install", "../input/efficientnet/efficientnet-1.1.0/", "-f", "./", "--no-index"])
+
 
 import efficientnet.tfkeras as efn
 
