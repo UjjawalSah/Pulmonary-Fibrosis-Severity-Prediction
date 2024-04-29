@@ -36,9 +36,16 @@ import subprocess
 # Unmounting directory
 subprocess.run(["umount", "/kaggle/input/"], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
 
+# Remove directory and its contents
 shutil.rmtree('/kaggle/input', ignore_errors=True)
+
+# Create directories if they don't exist
+KAGGLE_INPUT_PATH = '/kaggle/input'
+KAGGLE_WORKING_PATH = '/kaggle/working'
+
 os.makedirs(KAGGLE_INPUT_PATH, 0o777, exist_ok=True)
 os.makedirs(KAGGLE_WORKING_PATH, 0o777, exist_ok=True)
+
 
 try:
   os.symlink(KAGGLE_INPUT_PATH, os.path.join("..", 'input'), target_is_directory=True)
