@@ -31,7 +31,11 @@ KAGGLE_INPUT_PATH='/kaggle/input'
 KAGGLE_WORKING_PATH='/kaggle/working'
 KAGGLE_SYMLINK='kaggle'
 
-!umount /kaggle/input/ 2> /dev/null
+import subprocess
+
+# Unmounting directory
+subprocess.run(["umount", "/kaggle/input/"], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+
 shutil.rmtree('/kaggle/input', ignore_errors=True)
 os.makedirs(KAGGLE_INPUT_PATH, 0o777, exist_ok=True)
 os.makedirs(KAGGLE_WORKING_PATH, 0o777, exist_ok=True)
