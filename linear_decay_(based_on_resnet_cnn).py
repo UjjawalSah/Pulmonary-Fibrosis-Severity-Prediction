@@ -13,6 +13,7 @@ Original file is located at
 # NOTE: THIS NOTEBOOK ENVIRONMENT DIFFERS FROM KAGGLE'S PYTHON
 # ENVIRONMENT SO THERE MAY BE MISSING LIBRARIES USED BY YOUR
 # NOTEBOOK.
+pip install streamlit
 
 import os
 import sys
