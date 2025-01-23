@@ -31,11 +31,12 @@ The dataset used in this project is provided by the **Open Source Imaging Consor
 ### 3. Evaluation and Validation
 
 - **Cross-Validation**: Assessing model performance through cross-validation techniques to ensure robustness and generalization.
-- **Performance Metrics**: Using metrics such as Confidence value to evaluate the model's accuracy in predicting FVC decline.
+- **Performance Metrics**: Using metrics such as **Mean Absolute Error (MAE)**, **Root Mean Squared Error (RMSE)**, and **Accuracy** to evaluate the model's precision in predicting future FVC values based on past data.
 
 ## 🏆 Results
 
-The **FVCTransformer** model demonstrated promising results in predicting the severity of pulmonary fibrosis, with a **confidence level** of **250 or higher** in forecasting FVC decline. This model provided valuable insights into disease progression, aiding clinicians in early intervention and improving patient management strategies.
+The **FVCTransformer** model demonstrated promising results in predicting the **future FVC values** based on the previous 5 FVC measurements. With an **accuracy of around 85%** and a **confidence level** of **250 or higher**, the model accurately forecasted two future FVC values. These results provide valuable insights into the progression of pulmonary fibrosis, aiding clinicians in early intervention and improving patient management strategies.
+
 
 
 ## 📂 GitHub Repository
