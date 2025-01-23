@@ -1,5 +1,5 @@
 import flask
-from flask import Flask, request, jsonify, send_file, render_template
+from flask import Flask, request, jsonify, render_template
 import joblib
 import torch
 import torch.nn as nn
@@ -23,7 +23,7 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
-# Load the model
+# Load the model (ensure this is compatible for serverless use)
 model = joblib.load("fvc_transformer_model.pkl")
 
 @app.route('/predict', methods=['POST'])
@@ -53,5 +53,4 @@ def predict():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+# No need for app.run() in serverless environments
