@@ -3,3 +3,4 @@ Flask==2.3.3
 torch==2.0.1
 joblib==1.4.2
 numpy==2.0.2
+streamlit==1.25.0
