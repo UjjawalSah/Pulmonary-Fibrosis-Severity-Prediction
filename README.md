@@ -3,6 +3,7 @@
 ## 📋 Overview
 
 This project aims to predict the severity of decline in lung function for patients diagnosed with pulmonary fibrosis using machine learning techniques. Pulmonary fibrosis is a chronic lung disease characterized by scarring of the lungs, leading to difficulty in breathing. The severity prediction is based on **CT scan images** of the lungs, **metadata**, and baseline **Forced Vital Capacity (FVC)** measurements obtained from spirometry.
+https://pulmonary-fibrosis-severity-prediction.streamlit.app/
 
 The goal is to assist clinicians and patients in understanding disease progression better, providing early prognosis insights that could influence treatment decisions and clinical trial designs.
 
@@ -36,6 +37,7 @@ The dataset used in this project is provided by the **Open Source Imaging Consor
 ## 🏆 Results
 
 The **FVCTransformer** model demonstrated promising results in predicting the **future FVC values** based on the previous 5 FVC measurements. With an **accuracy of around 85%** and a **confidence level** of **250 or higher**, the model accurately forecasted two future FVC values. These results provide valuable insights into the progression of pulmonary fibrosis, aiding clinicians in early intervention and improving patient management strategies.
+<img width="293" alt="image" src="https://github.com/user-attachments/assets/b9edd1ac-450f-4300-98df-ec321b345286" />
 
 
 
