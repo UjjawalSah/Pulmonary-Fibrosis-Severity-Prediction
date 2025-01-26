@@ -93,7 +93,7 @@ st.markdown("---")
 st.markdown(
     """
     <p style='text-align: center; color: #555;'>For more details and to view the code, visit the project repository on 
-    <a href="https://github.com/" style="color: #007BFF;" target="_blank">GitHub</a>.</p>
+    <a href="https://github.com/UjjawalSah/Pulmonary-Fibrosis-Severity-Prediction" style="color: #007BFF;" target="_blank">GitHub</a>.</p>
     """,
     unsafe_allow_html=True,
 )
